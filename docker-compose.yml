@@ -1,0 +1,14 @@
+version: '3.2'
+
+
+services:
+  manager:
+    build: ./
+    command: 'watchmedo shell-command --patterns="*.py;*.txt" --recursive --command="python main.py" .'
+    volumes:
+      - ./:/usr/src/app/
+      - qmail:/qmail
+
+
+volumes:
+  qmail:

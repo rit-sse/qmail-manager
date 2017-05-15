@@ -1,3 +1,4 @@
 watchdog
 requests
 python-box
+pyyaml

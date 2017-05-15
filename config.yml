@@ -1,0 +1,21 @@
+defaults:
+  # ONLY sse.rit.edu emails will work here,
+  # if you want a @rit.edu, manage in officers app
+  join_emails:
+    technology:
+      - tech
+    president:
+      - vp
+      - secretary
+      - treasurer
+
+  spread_emails:
+    officers:
+      - president
+      - vp
+      - secretary
+      - treasurer
+
+config:
+  api: ${API_ROOT}
+  outdir: ./qmail

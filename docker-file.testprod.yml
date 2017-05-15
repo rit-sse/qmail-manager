@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  manager:
+    build: ./
+    volumes:
+      - qmail:/qmail
+
+
+volumes:
+  qmail:
+    external: true

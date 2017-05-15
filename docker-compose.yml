@@ -12,3 +12,4 @@ services:
 
 volumes:
   qmail:
+    external: true
